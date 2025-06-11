@@ -3,7 +3,7 @@ import librosa
 import numpy as np
 from scipy.ndimage import zoom
 N_MFCC = 40
-MODEL_PATH = "audio_deepfake_app/model.py"  # Adjust if located elsewhere
+MODEL_PATH = "deepfake_detector_final.h5"  # Adjust if located elsewhere
 
 SAMPLE_RATE = 16000
 DURATION = 5
