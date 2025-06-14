@@ -37,7 +37,10 @@
             color: #495057;
             font-weight: bold;
         }
-
+        h6{
+            color: #6e6f71;
+            font-size: small;
+        }
         .container {
             max-width: 600px;
             margin: auto;
@@ -75,6 +78,10 @@
     <div class="text-center">
         <img src="{{ url_for('static', filename='frequency_graph.png') }}" alt="Frequency Spectrum" class="img-center">
     </div>
+    <h6 class="text-center">Note:- The image above is an example of Mel-Spectrum Graph.<br>
+         The color or intensity of the points in the grid represents the amplitude or energy of a specific frequency at a specific time. Brighter or warmer colors (like yellow in this image) indicate higher intensity (louder sounds at that frequency), while darker or cooler colors (like purple) indicate lower intensity (quieter sounds).
+    </h6>
+
     <div class="text-center mt-4">
         <a href="{{ url_for('index') }}" class="btn btn-primary">Upload another file</a>
     </div>
